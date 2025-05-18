@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Clinicorp WhatsApp Lead Connector",
+  "version": "1.0",
+  "description": "Creates a Clinicorp lead from WhatsApp chat.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["https://web.whatsapp.com/*", "https://api.clinicorp.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  }
+}
