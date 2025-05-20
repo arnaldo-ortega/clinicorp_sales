@@ -1,10 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Clinicorp WhatsApp Lead Connector",
+  "name": "Clinicorp Sales",
   "version": "1.0",
-  "description": "Creates a Clinicorp lead from WhatsApp chat.",
+  "description": "Sync WhatsApp chats to Clinicorp CRM.",
   "permissions": ["storage", "scripting", "activeTab"],
-  "host_permissions": ["https://web.whatsapp.com/*", "https://api.clinicorp.com/*"],
+  "host_permissions": [
+    "https://web.whatsapp.com/*",
+    "https://sistema.clinicorp.com/*"
+  ],
   "content_scripts": [
     {
       "matches": ["https://web.whatsapp.com/*"],
